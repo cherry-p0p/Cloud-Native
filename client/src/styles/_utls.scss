@@ -1,0 +1,35 @@
+$color-primary-400: rgb(82, 140, 255);
+$color-secondary-400: rgb(69, 69, 69);
+$color-secondary-300: rgb(100, 100, 100);
+$color-secondary-200: rgb(240, 240, 240);
+$color-secondary-100: rgb(255, 255, 255);
+
+
+$width-md: 680px;
+
+@mixin button($bg-color, $color) {
+  padding: 0 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: $bg-color;
+  color: $color;
+  cursor: pointer;
+}
+
+@mixin input($border-color) {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $border-color;
+  padding: 12px 8px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin notice() {
+  color: $color-secondary-300;
+  font-size: 14px;
+  font-weight: 500;
+}
